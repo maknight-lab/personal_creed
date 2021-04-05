@@ -1,0 +1,337 @@
+#header { 
+    height: 800px; 
+    background-image: url("main.jpeg");
+    background-size: 100% 100%; 
+    display: grid;
+    grid-row-gap: 2px;
+    margin-right: 0;
+    margin-left: 0;
+    grid-template-areas: "nav" "name";
+}
+
+* { margin: 0; padding: 0; }
+
+#nav-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+    grid-area: nav;
+    border: 1px black solid;
+    background-color: black; 
+    border: steelblue 3px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.menu-1 li { font-size: 20px;}
+
+.nav { 
+    color: steelblue; 
+    text-align: center; 
+    font-size: 25px;
+    cursor: pointer;
+    transition: 1s;
+    padding-top: 5px;
+}
+
+#board-content { padding-right: 15px; padding-left: 10px; }
+
+#board-top { margin-top: 15px; }
+
+#mentor div { margin-top: 10px; }
+
+.who { padding-left: 15px; padding-right: 15px; padding-top: 10px; }
+
+.people-tab { font-size: 17px; padding-left: 15px; padding-right: 15px; }
+
+#h1 li { padding-left: 10px; }
+
+.special { padding-top: 0; }
+
+#nh1:hover,#nh2:hover,
+#nh3:hover,#nh4:hover,
+#nh5:hover,#nh6:hover,
+#nh7:hover { 
+    transition: 1s; 
+    cursor: pointer;
+    color: white;
+}
+
+#negativity {
+  display: grid;
+  grid-template-areas: "n-content n-icon";
+}
+
+#neg-icon { 
+  grid-area: n-icon;
+  font-size: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 15px;
+  color: red;
+}
+
+#mission-statement {
+  width: 70%;
+  font-size: 30px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px; 
+  margin-left: 10%;
+}
+
+#neg-content { grid-area: n-content; }
+
+#negativity, 
+#switch-points { margin-top: 10px; }
+
+.big { 
+  font-size: 50px; 
+  border: 1px solid black;
+  background-color: black; 
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: steelblue 3px solid;
+}
+
+#negativity span { font-style: italic; }
+
+.bullet-headers { color: white; }
+
+#important-people {
+  display: grid;
+  grid-template-areas: "icon content";
+}
+
+#important-icon {
+  grid-area: icon;
+  font-size: 160px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#important-content {
+  grid-area: content;
+}
+
+.section-headers {
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+  white-space: pre;
+}
+
+#name-container { 
+  margin-left: 45%;
+  margin-right: 30px;
+  grid-area: name;
+  height: 150px;
+}
+
+.hidden { display: none; transition: 1s; } 
+
+.top-row { 
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px; 
+}
+
+.bottom-row { 
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
+  padding-bottom: 10px;
+}
+
+.list-items { 
+  background-color: rgba(1,1,1, 0.9); 
+  font-size: 20px;
+  list-style: none;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 15px;
+}
+
+#name-container p {
+  font-family: 'Bradley Hand';
+  font-size: 80px;
+  margin-left: 20%;
+  color: black;
+  font-weight: bold;
+}
+
+#mission-picture {
+  background-image: url("http://drive.google.com/uc?export=view&id=13KsN2npz7-4c9pteWVcIHf-agaHqCZp0");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  padding-left: 0px!important;
+}
+
+#goals-main {
+  padding-left: 15px;
+}
+
+.goals-headers {
+  font-size: 40px;
+  font-family: 'Bradley Hand';
+  color: white;
+  width: 1200px;
+}
+
+.values-stuff {
+  width: 1200px;
+  margin: 10px;
+}
+
+.goals-containers {
+  border: 1px solid rgba(255,255,255, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#hardworking { margin-top: 5px; font-size: 16.5px; }
+
+#reliable { margin-right: 10px; margin-top: 15px; }
+
+#charity { grid-area: charity; margin-top: 15px; } 
+
+#reliable { grid-area: reliability; }
+
+#humble { grid-area: humility; }
+
+#courage { grid-area: courage; margin-right: 10px; }
+
+#goals-main { font-size: 16.5px; }
+
+#board span { color: white; }
+
+#mentor-container {
+  display: grid;
+  grid-template-areas: "left-side board";
+  border: 1px solid white;
+}
+
+#left-side { 
+  grid-area: left-side;
+  display: grid;
+  grid-template-areas: "mh mentor";
+  grid-column-gap: 0px;
+}
+
+#board { 
+  grid-area: board; 
+  display: grid;
+  grid-template-areas: "bh bcon";
+}
+
+#mentor { 
+  border: 1px solid white; 
+  grid-area: mentor; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#mentor-heading {
+  transform-origin: 0 0;
+  margin-top: 350px;
+  transform: rotate(270deg);
+  grid-area: mh;
+  font-size: 70px;
+  width: 85px;
+  color: white;
+}
+
+#board-content { 
+  border: 1px solid white; 
+  grid-area: bcon; 
+  padding-left: 10px; 
+}
+
+#board-header {
+  transform-origin: 0 0;
+  margin-top: 430px;
+  transform: rotate(270deg);
+  grid-area: bh;
+  font-size: 35px;
+  width: 50px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+#board-header span {
+  margin-left: 15px;
+}
+
+#beliefs-pictures {
+  display: flex;
+  flex-direction: row;
+}
+
+#book {
+  background-image: url("http://drive.google.com/uc?export=view&id=1LVaLY6Pi7vg8_wAivN3J8AL1AuJIFeHu");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 45px; 
+}
+
+#bom { 
+  background-image: url("http://drive.google.com/uc?export=view&id=1cndhUGLzVUMCkTjdBRDauWtzTsAREGE9");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 45px; 
+}
+
+#music { 
+  background-image: url("http://drive.google.com/uc?export=view&id=19n0B0-w8kstb1cFzPNGRHDPdQj2x-0dP");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 85px; 
+}
+
+#values-top {
+  margin-top: 10px;
+}
+
+.values-containers {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding-left: 15px;
+  margin: 0 10px 10px 10px;
+}
+
+#mission-statement div {
+  padding-left: 10px;
+}
+
+.respect-header:hover .respect-content {
+  display: block;
+}
+
+.respect-content { 
+  display: none;
+  padding-bottom: 10px;
+}
+
+#about-me-neg {
+  margin-top: 10px;
+}
